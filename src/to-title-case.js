@@ -2,8 +2,8 @@
  * Convert a string to title case
  * @param {String} str to convert to title case
  */
-function toTitleCase(str) {
-  return str.replace(/\w\S*/g, function(txt) {
+function toTitleCase (str) {
+  return str.replace(/\w\S*/g, function (txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
   })
 }

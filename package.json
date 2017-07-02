@@ -11,34 +11,28 @@
   "bugs": "https://github.com/tiaanduplessis/stringaling",
   "main": "dist/stringaling.common.js",
   "browser": "dist/stringaling.js",
-  "jsnext:main": "dist/stringaling.es.js",  
-  "files": [
-    "dist"
-  ],
+  "jsnext:main": "dist/stringaling.es.js",
+  "files": ["dist"],
   "scripts": {
     "test": "jest",
-    "lint": "standard 'src/**/*.js'",
+    "lint": "prettier-standard 'src/**/*.js'",
     "lint:fix": "npm run lint -- --fix",
     "build": "bili --format cjs --format es --format umd --compress",
     "start": "npm run test",
-    "pretest": "npm run format && npm run lint:fix",
-    "format": "prettier --print-width 100 --semi false --single-quote --write 'src/**/*.js'",
+    "pretest": "npm run lint:fix",
     "precommit": "npm test",
     "prepublish": "npm run build",
     "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push --tags && npm publish"
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "babel": {
-    "presets": [
-      ["env"]
-    ]
+    "presets": [["env"]]
   },
   "devDependencies": {
-    "jest": "^20.0.1",
-    "standard": "^10.0.2", 
     "babel-preset-env": "^1.4.0",
     "bili": "^0.15.0",
     "husky": "^0.13.3",
-    "prettier": "~1.3.1"
+    "jest": "^20.0.1",
+    "prettier-standard": "^6.0.0"
   }
 }
