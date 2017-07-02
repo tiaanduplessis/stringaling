@@ -19,6 +19,8 @@
     "lint:fix": "npm run lint -- --fix",
     "build": "bili --format cjs --format es --format umd --compress",
     "start": "npm run test",
+    "docs:lint": "documentation lint src/**",
+    "docs:generate": "documentation build src/** -f html -o docs;documentation readme src/index.js --section=API",
     "pretest": "npm run lint:fix",
     "precommit": "npm test",
     "prepublish": "npm run build",
@@ -31,6 +33,7 @@
   "devDependencies": {
     "babel-preset-env": "^1.4.0",
     "bili": "^0.15.0",
+    "documentation": "^4.0.0-rc.1",
     "husky": "^0.13.3",
     "jest": "^20.0.1",
     "prettier-standard": "^6.0.0"
