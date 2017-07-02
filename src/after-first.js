@@ -1,9 +1,9 @@
 /**
  *
  * @param {String} str to search
- * @param {*} delimter to look for
+ * @param {String} delimter to look for
  */
-function afterFirst (str = '', delimiter) {
+function afterFirst (str = '', delimiter = '') {
   str = str.toString()
 
   if (!delimiter) {
