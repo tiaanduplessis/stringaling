@@ -56,6 +56,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/stringaling.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install stringaling
 # OR
