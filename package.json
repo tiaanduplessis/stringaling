@@ -1,0 +1,35 @@
+{
+  "name": "stringaling",
+  "version": "1.0.0",
+  "description": "Collection of string manupulation functions",
+  "types": "dist/mod.d.ts",
+  "main": "dist/mod.js",
+  "module": "dist/mod.mjs",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsup ./mod.ts --format cjs,esm --dts --target node16",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "string",
+    "stringaling",
+    "string-utils"
+  ],
+  "homepage": "https://github.com/tiaanduplessis/stringaling#readme",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/stringaling/issues"
+  },
+  "repository": {
+    "url": "tiaanduplessis/stringaling",
+    "type": "git"
+  },
+  "author": "tiaanduplessis",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.1.2",
+    "typescript": "^4.7.3"
+  }
+}

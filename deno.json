@@ -1,0 +1,20 @@
+{
+  "lint": {
+    "files": {
+      "exclude": ["node_modules", "dist", "package-lock.json"]
+    },
+    "rules": {
+      "tags": ["recommended"],
+      "exclude": ["no-explicit-any", "ban-ts-comment"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "exclude": ["node_modules", "dist", "package-lock.json"]
+    }
+  },
+  "tasks": {
+    "validate": "deno lint && deno fmt",
+    "test": "deno test tests/ --allow-all"
+  }
+}
