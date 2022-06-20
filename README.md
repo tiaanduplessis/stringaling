@@ -6,7 +6,7 @@
 [![package license](https://img.shields.io/npm/l/stringaling.svg?style=flat-square)](https://npmjs.org/package/stringaling)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-When you just need to get a public google sheet as JSON
+Collection of string manupulation functions
 
 ## 📖 Table of Contents
 
