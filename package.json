@@ -1,7 +1,7 @@
 {
   "name": "stringaling",
   "version": "1.0.0",
-  "description": "Collection of string manupulation functions",
+  "description": "Collection of string manipulation functions",
   "types": "dist/mod.d.ts",
   "main": "dist/mod.js",
   "module": "dist/mod.mjs",

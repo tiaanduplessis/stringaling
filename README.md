@@ -6,7 +6,7 @@
 [![package license](https://img.shields.io/npm/l/stringaling.svg?style=flat-square)](https://npmjs.org/package/stringaling)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Collection of string manupulation functions
+Collection of string manipulation functions
 
 ## 📖 Table of Contents
 
